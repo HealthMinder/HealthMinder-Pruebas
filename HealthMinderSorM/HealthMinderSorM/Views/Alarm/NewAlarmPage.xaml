@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthMinderSorM.Views.NewAlarmPage">
+
+        <StackLayout Padding="10">
+            <Label Text="Nombre del Medicamento" />
+            <Entry x:Name="medicationNameEntry" Placeholder="Nombre del Medicamento" />
+
+            <Label Text="Cantidad a Tomar" />
+            <Entry x:Name="dosageEntry" Placeholder="Cantidad a Tomar" Keyboard="Numeric" />
+
+            <Label Text="Horario para Tomar" />
+            <TimePicker x:Name="timePicker" />
+
+            <Button Text="Guardar Registro" Clicked="OnSaveButtonClicked" />
+        </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthMinderSorM.Views.LoginPage">
+    <Grid RowDefinitions="250,*" Background="white">
+
+        <BoxView BackgroundColor="DarkCyan" Grid.Row="0" />
+        <Image Source="@drawable/HealthMinder_LogoLargo.png" Aspect="AspectFit" Grid.Row="0"/>
+        <Grid Grid.Row="1">
+            <Frame Margin="15,0" VerticalOptions="Center" HasShadow="False">
+                <StackLayout>
+                    <Label Text="Iniciar Sesion" HorizontalOptions="Center" TextColor="Black" FontSize="Title"  FontAttributes="Bold"/>
+                    <Entry x:Name="TxtUser" Placeholder="Correo" Text="{Binding TxtUser}" Keyboard="Email"/>
+                    <Entry x:Name="TxtPass" Placeholder="Contraseña" Text="{Binding TxtPass}" IsPassword="True"/>
+                    <Button x:Name="PswdFrgt_Btn" Text="Olvidaste La Contraseña?" BackgroundColor="Transparent" TextColor="Black"  HorizontalOptions="End"/>
+                    <Button x:Name="Login_Btn" Text="Iniciar Sesion" BackgroundColor="Black" TextColor="White" CornerRadius="15" Margin="15,0" Padding="15" Command="{Binding LoginCommand}"/>
+
+                    <Label HorizontalOptions="Center" Margin="0,10">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Aun no tienes cuenta? " TextColor="Gray"/>
+                                    <Span x:Name="Signup_Span" Text="Crea una aqui" TextColor="Black" FontAttributes="Bold">
+                                        <Span.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                        </Span.GestureRecognizers>
+                                    </Span>
+                                    
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </Grid>
+
+
+    </Grid>
+</ContentPage>
