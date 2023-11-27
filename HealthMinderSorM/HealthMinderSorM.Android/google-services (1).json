@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740773302899",
+    "project_id": "healthm-65513",
+    "storage_bucket": "healthm-65513.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740773302899:android:d3dc4350519d42034cd006",
+        "android_client_info": {
+          "package_name": "com.companyname.healthmindersorm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx7yyG_CQ-P-y__awzXn0eas0KJa9H00o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
